@@ -1,0 +1,109 @@
+.preview {
+  box-sizing: border-box;
+  font-family: monospace;
+  font-size: 50%;
+  background: #eee;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.shadow {
+  box-shadow: 0 -5px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pre {
+  white-space: pre-wrap;
+  margin: 0;
+}
+.size2xHeight {
+  -webkit-transform:scale(1,2);
+  transform:scale(1,2);
+  line-height:200%;
+}
+.size2xWidth {
+  -webkit-transform:scale(2,1);
+  transform:scale(2,1);
+}
+.size2x {
+  -webkit-transform:scale(2,2);
+  transform:scale(2,2);
+  line-height:200%;
+}
+.sizeNormal {
+  font-size: 100%;
+}
+.emph {
+  font-weight: bold;
+}
+.fontA {
+}
+.fontB {
+}
+.justifyLeft {
+  text-align: left;
+}
+.justifyCenter {
+  text-align: center;
+}
+.justifyRight {
+  text-align: right;
+}
+.invertBw {
+  background: black;
+  color: white;
+}
+.invertBwSpace {
+  background: black;
+  color: black;
+}
+
+.tornTop:after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 10px;
+  margin: 0 -1ch;
+  left:0;
+  right:0;
+  height: 10px;
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      #fff 33.333%, #fff 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      #fff 33.333%, #fff 66.667%,
+      transparent 66.667%
+    );
+  background-size: 8px 20px;
+  background-position: 0 0px;
+}
+
+.tornBottom:after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: -10px;
+  margin: 0 -1ch;
+  left:0;
+  right:0;
+  height: 10px;
+  background:
+    linear-gradient(
+      45deg, transparent 33.333%,
+      #fff 33.333%, #fff 66.667%,
+      transparent 66.667%
+    ),
+    linear-gradient(
+      -45deg, transparent 33.333%,
+      #fff 33.333%, #fff 66.667%,
+      transparent 66.667%
+    );
+  background-size: 8px 20px;
+  background-position: 0 -10px;
+}
